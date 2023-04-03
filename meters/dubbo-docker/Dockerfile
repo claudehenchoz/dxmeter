@@ -6,4 +6,4 @@ RUN git clone https://github.com/apache/dubbo.git
 
 WORKDIR /app/dubbo
 
-RUN mvn clean install -DskipTests
+RUN mvn -T 4 clean install -DskipTests
